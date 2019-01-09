@@ -3,16 +3,66 @@
 <html>
 <head>
     <title> Quiz Mockup </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .Quiz {
+            border: 25px solid lightblue;
+            /* background-color: lightblue; */
+            padding: 25px;
+            margin-top:25px;
+            /* margin-right:200px; */
+            /* margin-left: 200px; */
+            
+
+        }
+    </style>
 
 </head>
 
 <body>
-    <ul>
+    <div class = "Quiz">
+    <ol>
         <li> Each computer has a built-in instruction set taht it knows how to execute by design.</li>
-        <img src = "hint1.png" width = "20px", height = "20px">
-        <li> The computer uses intelligence to execute instructions.</li>
-        <img src = "hint1.png" height = "20px", width = "20px">
-    </ul>
+        <!-- <img src = "hint1.png" width = "20px", height = "20px"> -->
+        <button type="button" class="btn btn-warning">Hint</button>
+        <div class="alert alert-warning alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <p>Recall that we use the term computation to mean "the execution of a sequence of instructions by a computer with the intention of solving a given problem"</p>
+        </div>
+
+        <div class="radio">
+            <label><input type="radio" name="optradio" checked>True</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">False</label>
+        </div>
+        <div class="alert alert-danger alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <p><strong><span class="glyphicon glyphicon-remove"></span>Incorrect.</strong> Each computer has a set of positive instructions that it is "wired" to execute. We call this the instruction set of the computer.</p>
+        </div>
+        <!-- <li> The computer uses intelligence to execute instructions.</li> -->
+        <button type="button" class="btn btn-warning">Hint</button>
+        <!-- <img src = "hint1.png" height = "20px", width = "20px"> -->
+        <div class="alert alert-warning alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <p>Recall that we said that a computer executes the instructions given to it mechanically.</p>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio" checked>True</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">False</label>
+        </div>
+        <div class="alert alert-success alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <p><strong><span class="glyphicon glyphicon-ok"></span>Correct.</strong> A computer executes thhe instructions automatically. It's main task is to simply executes the instructions given to it.</p>
+        </div>
+    </ol>
+    </div>
+    <div style = "text-align: right; background-color: lightblue; height:40px">
+        <p style = "color: darkblue; margin-right : 25px">Reset this activity</p>
+    </div>
+
 </body>
 
 
