@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Bootstrap Example</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+              </head>
+    <style>
+        
+        li {
+            font-size:16px;
+        }
+        p{
+            font-size:25px;
+        }
+        .profilepic {
+            border-color: green;
+
+            /* background-color:grey; */
+            border-style: solid;
+            
+        }
+        .things {
+            border-color: green;
+
+            /* margin-top: 5%; */
+            /* background-color:yellow; */
+            border-style:double;
+        }
+        hr{
+            color:green;
+        }
+        .col-sm-4 {
+            /* border-style:solid; */
+            border-color: green;
+            height: 250px;
+            border-style:ridge;
+            border-width:small;
+            margin-left:20px;
+            margin-right:20px;
+            width:350px;
+            box-shadow: 5px 10px #888888;
+            /* padding-left:10px; */
+            /* padding:5px; */
+            /* margin-left:1%; */
+            /* overflow-block:  */
+            
+        }
+        /* .col-sm-10 {
+            padding-left:10%;
+        } */
+        #image1 {
+            height:50px;
+            width:300px;
+            opacity: 0.5;
+            filter: alpha(opacity=100);   
+        }
+        #pp {
+            padding-top:5px;
+        }
+        #image1:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+        #set {
+            text-align : right;
+        }
+        #scroll {
+            overflow :scroll; 
+            height:500px;
+            
+        }
+        
+
+        
+    </style>
+    <body>
+        <div class = "container-fluid">
+        <div class = "row">
+            <div class = "col-sm-2">
+                <div class = "profilepic" style = "height: 260px">
+                    <center><img id = "pp" src = "images\girl.jpg" style = "height:150px; width:150px; border-radius:50%"></center>
+                    <br><br><center><p> Madhuri Mukund </p></center>
+                </div>
+                <div class = "things" style = "height : 320px">
+                    <center><h3> THINGS TO KNOW 
+                        <br>ABOUT ME</h3></center><br>
+                    <ul>
+                        <li>Completed Btech in CVR</li><br>
+                        <li>Intermediate in Srichaitanya</li><br>
+                        <li>Secondary in J.H.S</li><br>
+                        <li>Good at playing chess</li><br>
+                        <li> Good at programming</li><br>
+                    </ul>
+                </div>
+            </div>
+            <div class = "col-sm-10">
+                <h1><center> My Journey So Far</center></h1>
+                <hr>
+                <div id = "scroll">
+                <div class = "row" style = "height: 300px">
+                    <!-- <span> -->
+                    <div class = "col-sm-4">
+                            <center><img id = "image1" src = "images\cspp.jpg" ></center>
+                            <p id = "set">CSPP</p>
+                            <hr>
+                        <ul> 
+                            <li>
+                                No need of initialising 
+                            </li>
+                            <li>More effort from me</li>
+                            <li> Nothing</li>
+                        </ul>
+                    </div>
+                    <!-- </span> -->
+                    <!-- <span> -->
+                    <div class = "col-sm-4">
+                            <center><img id = "image1" src = "images\dsa.png" ></center>
+                            <p id = "set">ADS</p>
+                            <hr width : 50%>
+                        <ul> 
+                                <li>
+                                    Algorithms are best
+                                </li>
+                                <li>More effort from me</li>
+                                <li> Nothing</li>
+                            </ul>
+                    </div>
+                    <!-- </span> -->
+                    <div class = "col-sm-4">
+                            <center><img id = "image1" src = "images\dbms.png"></center>
+                            <p id = "set">DBMS</p>
+                            <hr>
+                        <ul> 
+                                <li>
+                                    Learned new things apart from btech
+                                </li>
+                                <li>More effort from me</li>
+                                <li> Nothing</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class = "row" style = "height: 400px">
+                        <div class = "col-sm-4">
+                                <center><img id = "image1" src = "images\ics.jpg"></center>
+                                <p id = "set">ICS</p>
+                                <hr>
+                                <ul> 
+                                        <li>
+                                            Good  
+                                        </li>
+                                        <li>More effort from me</li>
+                                        <li> Nothing</li>
+                                    </ul>
+                            </div>
+                            <div class = "col-sm-4">
+                                    <center><img id = "image1" src = "images\cnf.jpg" ></center>
+                                    <p id = "set">CNF</p>
+                                    <hr>
+                                <ul> 
+                                        <li>
+                                            Socket Programming 
+                                        </li>
+                                        <li>More effort from me</li>
+                                        <li> Nothing</li>
+                                    </ul>
+                            </div>
+                            <div class = "col-sm-4">
+                                    <center><img id = "image1" src = "images\Cybersecurity.png" ></center>
+                                    <p id = "set">CS</p>
+                                    <hr>
+                                <ul> 
+                                        <li>
+                                            Poster presentations
+                                        </li>
+                                        <li>More effort from me</li>
+                                        <li> Nothing</li>
+                                    </ul>
+                            </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+        
+        li {
+            font-size:16px;
+        }
+        p{
+            font-size:25px;
+        }
+        .profilepic {
+            /* background-color:grey; */
+            border-style:;
+            
+        }
+        .things {
+            /* margin-top: 5%; */
+            /* background-color:yellow; */
+            border-style:double;
+        }
+        hr{
+            color:green;
+        }
+        .col-sm-4 {
+            border-style:double;
+            height: 200px;
+            /* padding-left:10px; */
+            padding:5px;
+            /* margin-left:1%; */
+            /* overflow-block:  */
+            
+        }
+        #image1 {
+            height:50px;
+            width:300px;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            
+        }
+        #image1:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+        #set {
+            text-align : right;
+        }
+        #scroll {
+            overflow:scroll; 
+            height:500px;
+        }
+        /* ::-webkit-scrollbar-thumb:hover {
+            background: blue; 
+} */
+        /* .col-sm-4 {
+            border-style:solid;
+        } */
+        /* ::-webkit-scrollbar {
+  width: 10px;
+} */
+    </style>
+</head>
+</html>
