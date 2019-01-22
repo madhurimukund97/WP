@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type = "text/javascript" src = "quiz.js"></script>
+
+  <style>
+    .Quiz {
+        border: 25px solid lightblue;
+        /* background-color: lightblue; */
+        padding: 25px;
+        /* margin-top:25px; */
+        /* margin-right:200px; */
+        /* margin-left: 200px; */
+    }
+    .resetbutton {
+        background-color: grey;
+    }
+    .window {
+        background-color: pink;
+        padding-bottom: 25px;
+    }
+</style>
+</head>
+
+<body>
+    <div style = "text-align: left; background-color: lightblue; height:40px">
+        <p style = "color: darkblue; font-size: 30px; margin-right : 25px">Learning by Doing</p>
+    </div>
+
+    <!-- <div class = "quiz" id = "quiz"> -->
+        <!-- <ol> -->
+            <div class = "window" id = "window">
+                <ul>
+                <li> <p id = "question 1"></p></li>
+                <button type="button" class="btn btn-warning" data-toggle = "collapse" data-target="#demo">Hint</button>
+                <div id = "demo" class = "collapse">
+                    <div class="alert alert-warning alert-dismissible" id = "hint 1">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    </div>
+                </div>
+                <div id = "radio 1">
+                </div>
+                <div id = "feedback 1">
+                </div>
+                <hr>
+                <li> <p id = "question 2"></p></li>
+                <button type="button" class="btn btn-warning" data-toggle = "collapse" data-target="#demo1">Hint</button>
+                <div id = "demo1" class = "collapse">
+                    <div class="alert alert-warning alert-dismissible" id = "hint 2">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    </div>
+                </div>
+                <div id = "radio 2">
+                </div>
+                <div id = "feedback 2">
+                </div>
+        </ul>
+        <div>
+            <button type = "button" style = "float:left" id = "Prev" onclick = "prev()">Prev</button>
+            <button type = "button" style = "float:right" id = "Next" onclick = "next()">Next</button>
+
+        </div>
+    </div>
+    <div class = "resetbutton">
+        <center><button type = "button" onclick = "reset()"> Reset this activity</button></center>
+
+    </div>
+</body>
+</html>
