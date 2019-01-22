@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .Quiz {
+            border: 25px solid lightblue;
+            /* background-color: lightblue; */
+            padding: 25px;
+            margin-top:25px;
+            /* margin-right:200px; */
+            /* margin-left: 200px; */
+            
+
+        }
+        #hint {
+            width:100%;
+            /* padding:15px; */
+            /* text-align:center; */
+            /* background-color:pink; */
+            /* margin:10px; */
+            display:none;
+        }
+
+    </style>
+</head>
+<!-- <html>
+<head>
+	<title>learn by doing using js</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head> -->
+<body>
+	<script>
+		hidden = false;
+		function myfunc(id){
+			var tmp=document.getElementById(id);
+			// hidden = !hidden;
+			// if(hidden) {
+			// 	document.getElementById(id).style.visibility = 'hidden';
+			// } else {
+			// 	document.getElementById(id).style.visibility = 'visibile';
+			// }
+			if(tmp.style.display === "none") {
+                    tmp.style.display = "block";
+                } else {
+                    tmp.style.display = "none";
+                }
+            
+			// tmp.style.setProperty("display","");
+		}
+    </script>
+    
+
+	<div class="Quiz">
+		<ol>
+		  <li>Each computer has a built-in instruction set that it knows how to execute by design.</li>
+		  <button onclick="myfunc('example')" class="btn btn-warning">Hint</button>
+		  <div id="example" class="alert alert-warning alert-dismissible fade in"  style="display:none">
+		  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <p>recall that we use the term computation to mean "the execution of a sequence of instructions by a computer with the intention of solving a given problem".</p>
+		</div>
+		<form action="/action_page.php">
+		  <input type="radio" name="boolean" value="True" onclick="myfunc('true')"> True<br>
+		  <input type="radio" name="boolean" value="False" onclick="myfunc('false')"> False<br>
+		</form>
+		  <div id="false" class="alert alert-danger alert-dismissible fade in" style="display: none">
+		  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <p><img src="wrong.png"width="25px">Incorrect.Each computer has a set of primitive instructions that it is "wired" to execute. We call this the instruction set of the computer.</p>
+        </div>
+        <div id="true" class="alert alert-success alert-dismissible fade in" style="display: none">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <p><img src="wrong.png"width="25px">Correct</p>
+          </div>
+
+		  <li>The computer uses intelligence to execute instructions.</li>
+		  <button onclick="myfunc('example1')" class="btn btn-warning">Hint</button>
+		  <div id="example1" class="alert alert-warning alert-dismissible fade in"  style="display:none">
+		  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <p>recall that we use the term computation to mean "the execution of a sequence of instructions by a computer".</p>
+		</div>
+		<form action="/action_page.php">
+		  <input type="radio" name="bool" value="True" onclick="myfunc('correct')"> True<br>
+		  <input type="radio" name="bool" value="False" onclick="myfunc('wrong')"> False<br>
+		</form>
+		  <div id="correct" class="alert alert-success alert-dismissible fade in" style="display:none">
+		  	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <p><img src="correct.png"width="25px">Correct. A computer executes instructions automatically. it's main task is to simply execute the instructions given to it and remember their results as the computation goes on. The part that may require intelligence is expressing a computation in terms of those instructions</p>
+        </div>
+        <div id="wrong" class="alert alert-danger alert-dismissible fade in" style="display: none">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <p><img src="wrong.png"width="25px">InCorrect</p>
+          </div>
+		</ol>
+	</div>
+</body>
+</html>
